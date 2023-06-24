@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>My Spring Boot Portfolio</title>
+<title>Tarun Patel Portfolio</title>
 <style>
 body{margin:0;}
 
@@ -13,7 +13,8 @@ body{margin:0;}
 #lead-content {position:absolute;z-index:10;left:50%;top:50%;transform:translate(-50%, -50%);text-align:center}
 #links a{text-decoration: none; padding: 14px 25px; text-align: center; display:inline-block;font-size:20px;color:#a0cfee}
 #lead-content h1{color:#a0cfee;font-weight:900;font-size:5em;text-transform:uppercase;letter-spacing:0.05em;line-height:2%}
-#lead-content h2{color:#a0cfee;font-weight:500;font-size:3em;margin-bottom:2px}
+#lead-content h2{color:#a0cfee;font-weight:500;font-size:3em;margin-bottom:0px}
+#lead-content h3{color:#a0cfee;font-weight:300;font-size:2.5em;margin-top:0px;margin-bottom:0px}
 .btn-rounded {background-color: #a0cfee;border: none; color: white; padding: 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; border-radius: 12px;}
 .btn-rounded:hover{color:#808080;background:#fff;text-decoration:none}
 
@@ -72,19 +73,10 @@ body{margin:0;}
 <a href="#courses">Courses</a>
 <a href="#contact">Contact</a>
 </div>
-<h1>Salil Jagtap</h1>
-<h2>Software Engineer</h2>
-<a href="resume.pdf" class="btn-rounded">Download Resume</a>
-</div>
-
-
-<div id="demo">
-<h2>Weather</h2>
-<form>
-<input type="text" id="city" placeholder="Enter the City Name"><br><br>
-<button type="button" id="btn"onclick="loadDoc()">Click Me</button>
-</form>
-<p></p>
+<h1>Tarun Patel</h1>
+<h2>Senior Software Engineer @ VISA</h2>
+<h3> Ex - Amazon, Nurture.farm </h3>
+<a href="resume.pdf" class="btn-rounded">Download My Resume here :)</a>
 </div>
 
 <script>
@@ -95,10 +87,10 @@ function loadDoc() {
     if (this.readyState == 4 && this.status == 200) {
       var object= JSON.parse(this.responseText);
       document.getElementById("demo").innerHTML =
-      "Temprature: "+ object.main.temp+" °C<br>"+ 
+      "Temprature: "+ object.main.temp+" ï¿½C<br>"+ 
       "Humidity: "+object.main.humidity+" %<br>" +
-      "Max Temprature: "+object.main.temp_max+" °C<br>" +
-      "Min Temprature: "+object.main.temp_min+" °C<br>" +
+      "Max Temprature: "+object.main.temp_max+" ï¿½C<br>" +
+      "Min Temprature: "+object.main.temp_min+" ï¿½C<br>" +
       "Condition: "+object.weather[0].description;
       
     }
@@ -111,46 +103,56 @@ function loadDoc() {
  
 <div id="education">
 <h2 class="heading">Education</h2>
-<div id="img1"><a href="https://www.tamuk.edu"><img alt="Loading..." src="tamuk.png"></a></div>
-<div id="img2"><a href="https://www.sgbau.ac.in/"><img alt="Loading..." src="amu.jpg"></a></div>
-<h3>Texas A&M University-Kingsville</h3>
-<span class="education-date">August 16, 2017 - May 17, 2019</span>
-<h4>Master of Science in Computer Science (GPA-3.91)</h4>
-<h3>Amravati University</h3>
-<span class="education-date">August 06, 2012 - May 27, 2016 </span>
-<h4>Bachelor of Engineering in Computer Science (GPA-3.78)</h4>
+<div id="img2"><a href="https://aitr.ac.in/"><img alt="Loading..." src="acro.jpeg" style="width:180px;height:150px;display:inline-block"></a></div>
+<h3>Acropolis Institute of Technology & Research, indore</h3>
+<span class="education-date">July, 2016 - May, 2020</span>
+<h4>Bachelor of Engineering in Computer Science </h4>
 </div>
-
 
 <div id="experience" class="background-alt">
 <h2 class="heading">Experience</h2>
-<h3>Texas A&M University, Kingsville, Texas</h3>
-<span class="education-date">April 02, 2018 - May 10, 2019</span>
-<h4>Junior IT Professional</h4>
+<div>
+<h2>Amazon</h2>
+<%--
+<center>
+<div id="img2">
+  <a href="https://www.amazon.com"><img src="amazon_logo.png" alt="Amazon Logo"></a>
+</div>
+</center>
+--%>
+<span class="job-date">Sep, 2021 - Jan, 2023</span>
+<h4>Software Development Engineer</h4>
 <ul>
-<li>As a member of the web development team, developed a new website for Texas A&M University-Kingsville to improve user experience and student engagement using JavaScript, HTML5, and CSS3</li>
-<li>Defined content strategy for migrating data from the old website to the new website using Cascade CMS</li>
-<li>Developed an application for the Alternate Admission Review committee using Java and MySQL. This application was developed to provide an additional set of parameters to the committee in student enrollment</li>
-<li>Handled Texas A&M University's incoming communication traffic and student records using Talisma and Banner, a Cloud Campus Resource Management tools</li>
-</ul>
+<li> Built Regional In-stock Manager(RIM) system for 2 Million Sellers on Amazon
+<li> Designed, built & launched Restock Recommendation system for 293 Million
+merchant full-filled offers on Amazon.in, which is 90 % of all offers on Amazon.in,
+with opportunity to save INR 54 Million
+<li> Designed, built & launched RIM for Inter-Cross Dock for 2 Million Sellers, which
+implements hub and spoke distribution paradigm, this covers 25 % of all inbounds
+on Amazon.in
+<li> Setup automated systems for processing large data from scratch.
+<li> Handled critical tickets during on-calls, contributed in removing tech debts,
+upgrading Operational Excellence (OE), and code reviews
+<li> Tech Stack : Java, Junit, AWS, GraphQL, DyanmoDB, Scala, Hadoop,
+ElasticSearch, Git, etc.</ul>
 </div>
 
 
 <div id="skills">
 <h2 class="heading">Skills</h2>
 <ul>
+<li>Java</li>
+<li>Python</li>
+<li>C++</li>
 <li>JavaScript</li>
 <li>HTML5</li>
 <li>CSS3</li>
 <li>React</li>
-<li>Java</li>
 <li>XML</li>
 <li>jQuery</li>
 <li>AJAX</li>
 <li>Bootstrap</li>
 <li>PHP</li>
-<li>Python</li>
-<li>C++</li>
 <li>C</li>
 <li>MySQL</li>
 <li>Software Development Life Cycle</li>
@@ -178,9 +180,7 @@ function loadDoc() {
 
 <div id="contact">
 <h2>Get in Touch</h2>
-<a href="https://github.com/saliljagtap12" target="_blank">GitHub</a>
-<a href="https://www.linkedin.com/in/salil-jagtap/" target="_blank">LinkedIn</a>
-<a href="https://www.facebook.com/salil.jagtap" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+<a href="https://www.linkedin.com/in/tarunpatel1860/" target="_blank">LinkedIn</a>
 </div>
 
 </html>
